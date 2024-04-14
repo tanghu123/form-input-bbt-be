@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @Slf4j
-@MapperScan("com.bbt.form.dao")
+@MapperScan({"com.bbt.form.dao"})
 public class FormApplication {
 
   public static void main(String[] args) {

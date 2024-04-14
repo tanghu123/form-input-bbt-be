@@ -9,7 +9,10 @@ import lombok.Data;
 @TableName("user")
 public class UserPO extends BasePO implements Serializable {
 
-  @TableField("loginName")
+  @TableField("name")
+  private String name;
+
+  @TableField("login_name")
   private String loginName;
 
   @TableField("email")

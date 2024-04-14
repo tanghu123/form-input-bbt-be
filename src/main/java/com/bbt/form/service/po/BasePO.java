@@ -9,22 +9,22 @@ import lombok.Data;
 @Data
 public class BasePO {
 
-  @TableId(value = "id", type = IdType.ASSIGN_ID)
+  @TableId(value = "id", type = IdType.ASSIGN_UUID)
   private String id;
 
   @TableField("created")
   private LocalDateTime created;
 
-  @TableField("lastModified")
+  @TableField("last_modified")
   private LocalDateTime lastModified;
 
-  @TableField("tenant")
+  @TableField("tenant_id")
   private String tenant;
 
-  @TableField("createdBy")
+  @TableField("created_user")
   private String createdBy;
 
-  @TableField("lastModifiedBy")
+  @TableField("last_modified_user")
   private String lastModifiedBy;
 
   @TableField("version")

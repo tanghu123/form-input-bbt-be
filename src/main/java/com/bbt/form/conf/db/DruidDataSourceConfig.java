@@ -1,13 +1,11 @@
-package com.bbt.form.conf;
+package com.bbt.form.conf.db;
 
+import com.alibaba.druid.pool.DruidDataSource;
+import javax.sql.DataSource;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import com.alibaba.druid.pool.DruidDataSource;
-
-import javax.sql.DataSource;
 
 @Configuration
 public class DruidDataSourceConfig {
